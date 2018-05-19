@@ -1,0 +1,17 @@
+  div {
+    color: #000;
+    font-size: 30px;
+    background-color: green;
+  }
+
+  .my-para,
+  #myPara1 {
+    color: #000;
+    font-size: 30px;
+    background-color: blue !important;
+  }
+
+  .join-me-para span {
+    font-weight: bold;
+    color: yellow;
+  }
