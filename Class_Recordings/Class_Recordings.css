@@ -8,8 +8,18 @@ h1{
   }
 	
 }
-.may14th {
-    color: #0000;
-    font-size: 300px;    
-    float: right;
-  }
+.videos{
+	display: inline-block;
+
+}
+.video{
+	display: inline-block;
+	width: 520px;
+	height: 340px;
+	padding: 20px;
+}
+
+.name{
+	position: relative;
+	width: 100px ;
+}

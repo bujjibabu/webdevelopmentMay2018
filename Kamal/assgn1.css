@@ -1,0 +1,25 @@
+body{
+	background: #FDEBD0;
+}
+.logo {
+	position: relative;
+   width: 100px;
+    left: 50px;
+
+}
+.logo1 {
+  position: relative;
+    left: 50px;
+    size: 30px;
+    break-before: 0px;
+}
+
+.top-nav{
+position: relative;
+left: 1050px
+}
+
+.main-pic{
+	width: 1250px;
+	height: 200px;
+}
