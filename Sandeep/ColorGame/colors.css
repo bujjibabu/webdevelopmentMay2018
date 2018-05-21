@@ -1,0 +1,50 @@
+body{
+	background:  black;
+	margin: 0px;
+}
+#top {
+	color: white;
+	background: #4b4bfd;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	padding: 2%;
+}
+#menuList{
+	background: white;
+}
+#newColors{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+#easy{
+	margin-right: 1%;
+}
+
+p {
+	text-align: center;
+	font-weight: bold;
+	margin: 0px;
+}
+#colorHint {
+font-size: xx-large;
+}
+
+#firstColor,#forthColor{
+	margin-left: 30%;
+	margin-right: 5%;
+}
+#thirdColor,#sixthColor{
+	margin-right: 30%;
+	margin-left: 5%;
+}
+.inline-boxes{
+
+	float: left;
+	 height: 125px;
+    width: 10%;
+    margin-top: 15px;
+    background-color: red;
+    border-radius: 20px;
+    
+}
