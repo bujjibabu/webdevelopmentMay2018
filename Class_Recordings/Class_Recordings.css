@@ -1,25 +1,24 @@
-body{
-	background-color:#FDEBD0;
-}
-h1{
-	color: #6E2C00;
-    font-size: 30px;
-    
-  }
-	
-}
-.videos{
-	display: inline-block;
-
-}
-.video{
-	display: inline-block;
-	width: 520px;
-	height: 340px;
-	padding: 20px;
+body {
+  background-color: #FDEBD0;
 }
 
-.name{
-	position: relative;
-	width: 100px ;
+h1 {
+  color: #6E2C00;
+  font-size: 30px;
+}
+
+.videos {
+  display: inline-block;
+}
+
+.video {
+  display: inline-block;
+  width: 520px;
+  height: 340px;
+  padding: 20px;
+}
+
+.name {
+  position: relative;
+  width: 100px;
 }
