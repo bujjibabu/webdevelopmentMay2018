@@ -1,0 +1,23 @@
+.side{
+	float: left;
+	width: 30%;
+}
+.side img{
+	width: 20%;
+}
+.list{
+	float: left;
+}
+body img{
+	width: auto;
+}
+body div img{
+	width: 3%;
+}
+body h1{
+	display: inline;
+}
+.aut{
+	float: left;
+
+}
