@@ -2,48 +2,61 @@ body{
 	background:  black;
 	margin: 0px;
 }
-#top {
+.top {
 	color: white;
-	background: #4b4bfd;
+	background: rgb(75,75,253);
 	border: 0px;
 	margin: 0px;
 	padding: 2%;
 }
-#menuList{
+.menu-list{
 	background: white;
-	color:#4b4bfd;
+	color:rgb(75,75,253);
 }
-#newColors{
+.new-colors{
 	margin-left: 25%;
 	margin-right: 25%;
 }
-#hard{
+.hard{
 	color:white;
 	margin-left: 1%;
-	background: #4b4bfd;
+	background: rgb(75,75,253);
 }
 p {
 	text-align: center;
 	font-weight: bold;
 	margin: 0px;
 }
-#colorHint {
+.color-hint {
 font-size: xx-large;
 }
 
-#firstColor,#forthColor{
+.first-color,.forth-color{
 	margin-left: 30%;
 	margin-right: 1%;
-}
-#thirdColor,#sixthColor{
-	margin-right: 30%;
-	margin-left: 1%;
-}
-.inline-boxes{
 	float: left;
 	height: 125px;
 	width: 10%;
 	margin-top: 15px;
-	background-color: red;
-	border-radius: 20px;				
+	background-color: rgb(255,0,255);
+	border-radius: 20px;	
+}
+.third-color,.sixth-color{
+	margin-right: 30%;
+	margin-left: 1%;
+	float: left;
+	height: 125px;
+	width: 10%;
+	margin-top: 15px;
+	background-color: rgb(255,0,255);
+	border-radius: 20px;	
+}
+.second-color,.fifth-color{
+	float: left;
+	height: 125px;
+	width: 10%;
+	margin-top: 15px;
+	background-color: rgb(255,0,255);
+	border-radius: 20px;	
+				
 }
