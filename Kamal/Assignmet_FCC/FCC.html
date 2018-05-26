@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Free Conference Call</title>
+		<link rel="stylesheet" type="text/css" href="FCC.css">
+	</head>
+	<body>
+		<header class="page-header">
+			<img class="logo-image" src="logoo.png">
+			<div class="language-buttons">
+				<button onclick="english();">
+				English
+				</button>
+				<button onclick="Spanish();">
+				Spanish
+				</button>
+			</div>
+		</header>
+		<div class="left-box" id="leftBoxEnglish">
+			<table class="left-table">
+				<thead class="table-head">
+					<tr>
+						<th>Audio Information</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="row-one">
+						<td>
+							Dial-in number:
+						</td>
+						<td >
+							<i> us flag</i>(712) 451-1197
+						</td>
+					</tr>
+					<tr class="row-two">
+						<td>
+							Access code:
+						</td>
+						<td >
+							340187 PIN
+						</td>
+					</tr>
+					<tr class="row-three">
+						<td>
+							Online meeting ID:
+						</td>
+						<td >
+							kamalnadh_abcdefg
+						</td>
+					</tr>
+					<tr class="row-four">
+						<td>
+							International dial-in numbers:
+						</td>
+						<td >
+							View list
+						</td>
+					</tr>
+				</tbody>
+			</table>			
+		</div>
+
+			<div class="left-box-spanish" id="leftBoxSpanish">
+			<table class="left-table">
+				<thead class="table-head">
+					<tr>
+						<th>Información de audio</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="row-one">
+						<td>
+							Número de marcado:
+						</td>
+						<td >
+							(712) 451-1197
+						</td>
+					</tr>
+					<tr class="row-two">
+						<td>
+							Código de acceso:
+						</td>
+						<td >
+							340187 PIN
+						</td>
+					</tr>
+					<tr class="row-three">
+						<td>
+							
+						ID de reunión en línea:
+						</td>
+						<td >
+							kamalnadh_abcdefg
+						</td>
+					</tr>
+					<tr class="row-four">
+						<td>
+							Números de marcado internacionales:
+						</td>
+						<td >
+							Ver lista
+						</td>
+					</tr>
+				</tbody>
+			</table>			
+		</div>
+	
+		<script type="text/javascript">
+		function english () {
+		  document.getElementById('leftBoxEnglish').style.visibility = 'visible';
+		  document.getElementById('leftBoxSpanish').style.display = 'none';
+		};
+
+		function Spanish () {
+		 document.getElementById('leftBoxEnglish').style.display = 'none';
+		 document.getElementById('leftBoxSpanish').style.visibility = 'visible';
+		};
+
+
+			// function Spanish () {
+			// 	document.getElementByid('leftBoxEnglish').style.visibility= 'hidden';
+			// 	document.getElementByid('leftBoxSpanish').style.visibility= 'visible';
+			// };
+		</script>
+	</body>
+</html>
