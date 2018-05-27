@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHOW & HIDE</title>
+</head>
+<body>
+	<div id="myPara1" style="visibility: visible;">
+		<h1>My Para1</h1>
+		<p>FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more. FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.</p>
+	</div>
+<!-- 	<div id="myPara2">
+		<h1>My Para2</h1>
+		<p>FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more. FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.</p>
+	</div>
+	<div id="myPara3">
+		<h1>My Para3</h1>
+		<p>FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more. FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.FreeConferenceCall is an online meeting service designed for screen sharing, web conferencing, product demonstrations, webinars and more.</p>
+	</div> -->
+	<div>
+		<button onclick="Show();">Show</button>
+		<button onclick="Hide();">Hide</button>
+		<button onclick="Toggle();">Toggle</button>
+	</div>
+
+	<script type="text/javascript">
+
+		function Hide () {
+		 document.getElementById('myPara1').style.visibility = 'hidden';
+		};
+
+		function Show () {
+		  document.getElementById('myPara1').style.visibility = 'visible';
+		};
+
+		function Toggle () {
+			/*if(document.getElementById('myPara1').style.visibility == 'visible') {
+				Hide();
+			} else {
+				Show();
+			}*/
+			document.getElementById('myPara1').style.visibility == 'visible' ? Hide() : Show()
+		};
+
+	</script>
+</body>
+</html>

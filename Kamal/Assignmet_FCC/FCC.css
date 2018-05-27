@@ -1,0 +1,33 @@
+.page-header{
+	display: inline-block;
+	margin-top: 5%;
+    margin-left: 10%;
+}
+.logo-image{
+	width: 45%;
+	float: left;
+}
+.language-buttons{
+	float: right;
+	margin-top: 7%;
+}
+.left-box-english{
+width: 50%;
+visibility: visible;
+}
+/*.left-table{
+
+}
+.row-one{
+
+}
+.row-two{
+	
+}
+.row-three{
+	
+}*/
+
+.left-box-spanish{
+visibility: hidden;
+}
