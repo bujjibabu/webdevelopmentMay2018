@@ -3,7 +3,6 @@
 <head>
 	<title>Color Coding</title>
 	<link rel="stylesheet" type="text/css" href="colors.css">
-	<script type="text/javascript" src="colors.js"></script>
 </head>
 <body>
 	<div class="top">
@@ -12,17 +11,19 @@
 		<p>GUESSING GAME</p>
 	</div>
 	<div class="menu-list">
-		<span class="new-colors">NEWCOLORS</span>
-		<span class="easy">EASY</span>
-		<span class="hard">HARD</span>
+		<span class="new-colors"><a href="colors.html">NEWCOLORS</a></span>
+		<span  id="gameStatus"></span>
+		<span class="easy"><a href="colors.html">EASY</a></span>
+		<span class="hard"><a href="colors.html">HARD</a></span>
 	</div>
 	<div>
-		<div class="first-color" id="firstBox"></div>
-		<div class="second-color" id="secondBox"></div>
-		<div class="third-color" id="thirdBox"></div>
-		<div class="forth-color" id="forthBox"></div>
-		<div class="fifth-color" id="fifthBox"></div>
-		<div class="sixth-color" id="sixthBox"></div>
+		<input class="first-color" id="firstBox" type="button" onclick="selectedBox(this.id)" >
+		<input class="second-color"id="secondBox"type="button" onclick="selectedBox(this.id)">
+		<input class="third-color" id="thirdBox" type="button" onclick="selectedBox(this.id)">
+		<input class="forth-color" id="forthBox" type="button" onclick="selectedBox(this.id)">
+		<input class="fifth-color" id="fifthBox" type="button" onclick="selectedBox(this.id)">
+		<input class="sixth-color" id="sixthBox" type="button" onclick="selectedBox(this.id)">
 	</div>
+	<script type="text/javascript" src="colors.js"></script>
 </body>
 </html>
