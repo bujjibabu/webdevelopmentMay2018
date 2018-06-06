@@ -1,32 +1,32 @@
 #logo {
-    padding: 25px;
+  padding: 25px;
 }
 
 .nav-list {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .image {
-    height: 400px;
-    width: 100%;
-    background-image: url(https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home-bg.jpg);
-    background-size: cover;
+  height: 400px;
+  width: 100%;
+  background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home-bg.jpg");
+  background-size: cover;
 }
 
 .quotes {
 
-    width: 100%;
+  width: 100%;
 
-    color: white;
-    background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home_quote_bg.jpg");
+  color: white;
+  background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home_quote_bg.jpg");
 
-    background-size: cover;
+  background-size: cover;
 }
 
 .image-content-seperation {
-    padding: 20px;
+  padding: 20px;
 }
 
 .protected {
-    text-align: center;
+  text-align: center;
 }
