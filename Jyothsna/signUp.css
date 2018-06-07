@@ -1,0 +1,139 @@
+ 
+  body {
+    margin: 0;
+    background: #e7ebf3;
+    height: 80%;
+  }
+  .fb-header {
+    background: #3b5998;
+    height: 100px;
+    width: 100%;
+  }
+  .fb-header .logo {
+    font-size: 50px;
+    color: #fff;
+    margin-left: 20%;
+    padding-top: 20px;
+    font-weight: bold;
+    float: left;
+    margin-right: 250px;
+  }
+.login{
+  width: 150px;
+  height: 20px;
+  float: left;
+  color: white;
+  margin-right: 30px;
+  font-size: 12px;
+  font-family: verdana;
+}
+
+.login p{
+  margin-bottom: 5px;
+}
+ .login-btn{
+  margin-top: 33px;
+ }
+
+  .fb-body .left-section{
+  	margin-left:10%;
+    width: 30%;
+    float: left;
+    margin-top: 50px;
+  }
+  .fb-body .left-section .fb-help-text {
+  	font-size: 23px;
+    color: #0e385f;
+    font-weight: bold;
+  }
+  .fb-body .right-section  {
+  	width: 45%;
+    float: left;
+    margin-top: 0px;
+    margin-left: 800px;
+    margin-bottom: 85%;
+  }
+  .fb-body .right-section .create-acc-text {
+  	color: #333;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .right-section .free-text {
+  	 font-size: 20px;
+   }  
+   .signup-form .input-box {
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+   }
+   .signup-form .input-box:focus {
+   	outline: none;
+   }
+   .signup-form .input-box.mobile-num,
+   .signup-form .input-box.new-password {
+   	width: 449px;
+    margin-top: 20px;
+   }
+   .birth-day-group .birthday-label {
+   	display: block;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+   }
+   .signup-form .select-box {
+   	height: 30px;
+    padding: 5px;
+   }
+   .birth-day-group .dob-help {
+   	width: 150px;
+    display: inline-block;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 11px;
+    color: #3F51B5;
+   }
+   .birth-day-group .dob-help:hover {
+   	text-decoration: underline;
+   }
+   .signup-form .gender {
+   	margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+   }
+   .signup-form .terms {
+   	width: 360px;
+    font-size: 14px;
+    color: #777;
+   }
+   .signup-form .signup-btn {
+   	padding: 10px 50px 10px 50px;
+    margin-bottom: 20px;
+    background: #669a66;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+   }
+ hr{
+  height:  5px;
+ }
+   .business a{
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .business{
+    font-size: 20px;
+  }
+ /*.languages{
+  /*text-decoration: none;*/
+  color: red;
+  font-size: 20px;
+  list-style-type: none;
+  margin:0px;
+ }*/
