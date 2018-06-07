@@ -1,32 +1,78 @@
-#logo {
-    padding: 25px;
-}
+  #logo {
+    padding: 11px;
+  }
 
-.nav-list {
+  .nav-list {
     padding-top: 50px;
-}
+  }
 
-.image {
-    height: 400px;
+  p {
+    font-size: 15px;
+    line-height: 1.7em;
+    color: #a3a3a3;
+  }
+
+  .nav-list li {
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+    border-collapse: all;
+    font-size: 14px;
+    font-weight: 800;
+    content: "3";
+  }
+
+  .image1 {
+    height: 430px;
     width: 100%;
     background-image: url(https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home-bg.jpg);
     background-size: cover;
-}
+  }
+  .image-text{
+  	color: white;
+  	text-align: center;
+  	font-size:44px;
+  	padding-bottom: 20px;
+  }
 
-.quotes {
-
+  .quotes {
     width: 100%;
-
     color: white;
     background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home_quote_bg.jpg");
-
+    clear: both;
     background-size: cover;
-}
+    margin: 0px;
+  }
 
-.image-content-seperation {
-    padding: 20px;
-}
+  .quotes h1 {
+    font-size: 32px;
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold;
+  }
 
-.protected {
+  .image-content-seperation {
+    margin: 25px;
+  }
+
+  .protected {
     text-align: center;
-}
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .we-help {
+    font-weight: 700;
+  }
+
+  .button-custom {
+    border-radius: 0px;
+    border-width: medium;
+    border-color: black;
+    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+    font-size: 15px;
+  }
+   .image2 {
+    height: 275px;
+    width: 100%;
+    background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home_cta_bg_2.jpg");
+    background-size: cover;
+    margin: 0px;
+  }
