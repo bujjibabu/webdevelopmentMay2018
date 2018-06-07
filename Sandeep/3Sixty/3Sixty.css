@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   #logo {
     padding: 11px;
   }
@@ -76,3 +77,37 @@
     background-size: cover;
     margin: 0px;
   }
+=======
+#logo {
+  padding: 25px;
+}
+
+.nav-list {
+  padding-top: 50px;
+}
+
+.image {
+  height: 400px;
+  width: 100%;
+  background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home-bg.jpg");
+  background-size: cover;
+}
+
+.quotes {
+
+  width: 100%;
+
+  color: white;
+  background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home_quote_bg.jpg");
+
+  background-size: cover;
+}
+
+.image-content-seperation {
+  padding: 20px;
+}
+
+.protected {
+  text-align: center;
+}
+>>>>>>> 4e3f6f4e786a9f97099562a876dc449edef178ef
