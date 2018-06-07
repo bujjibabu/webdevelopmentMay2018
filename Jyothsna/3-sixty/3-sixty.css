@@ -1,4 +1,20 @@
 
+/*@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) {
+
+
+
+}
+
+*/
+
+.form-bg {
+	background: #eee5dc;
+    display: inline-block;
+    padding: 100px 0;
+}
+
 #Email{
 	color: #e6eaec;
 	/*padding: 12px 25px 25px 20px !important;*/
