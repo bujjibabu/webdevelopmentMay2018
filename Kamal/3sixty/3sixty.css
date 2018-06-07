@@ -1,0 +1,37 @@
+.page-head{
+	display: flex;
+}
+.page-logo{	
+	width: 70%;
+}
+
+.nav-item1, .nav-item2, .nav-item3{
+	margin-right: 10px;
+}
+.page-nav{
+	margin-top: 4%;
+}
+.nav-phn-number{
+	margin-left: 300px;
+	size: 30px;
+}
+.nav-btn{
+    box-sizing: border-box;
+    background: black;
+}
+.page-body1{
+	background-position: top center;
+    background: url('home-bg.jpg');
+    height: 400px;
+    background-size: cover;
+}
+.page-body1-text{
+	color: white;
+    text-align: center;
+    font-size: 29px;
+}
+
+
+
+
+
