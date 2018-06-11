@@ -1,113 +1,289 @@
-<<<<<<< HEAD
-  #logo {
-    padding: 11px;
-  }
+.sixty-header {
+  background-color: white;
+  box-shadow: 0px 1px #fafafa;
+  padding-top: 10px;
+}
 
-  .nav-list {
-    padding-top: 50px;
-  }
+.content {
+  margin-top: 132px;
+}
 
-  p {
-    font-size: 15px;
-    line-height: 1.7em;
-    color: #a3a3a3;
-  }
-
-  .nav-list li {
-    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
-    border-collapse: all;
-    font-size: 14px;
-    font-weight: 800;
-    content: "3";
-  }
-
-  .image1 {
-    height: 430px;
-    width: 100%;
-    background-image: url(https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home-bg.jpg);
-    background-size: cover;
-  }
-  .image-text{
-  	color: white;
-  	text-align: center;
-  	font-size:44px;
-  	padding-bottom: 20px;
-  }
-
-  .quotes {
-    width: 100%;
-    color: white;
-    background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home_quote_bg.jpg");
-    clear: both;
-    background-size: cover;
-    margin: 0px;
-  }
-
-  .quotes h1 {
-    font-size: 32px;
-    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
-    font-weight: bold;
-  }
-
-  .image-content-seperation {
-    margin: 25px;
-  }
-
-  .protected {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  .we-help {
-    font-weight: 700;
-  }
-
-  .button-custom {
-    border-radius: 0px;
-    border-width: medium;
-    border-color: black;
-    font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
-    font-size: 15px;
-  }
-   .image2 {
-    height: 275px;
-    width: 100%;
-    background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home_cta_bg_2.jpg");
-    background-size: cover;
-    margin: 0px;
-  }
-=======
-#logo {
-  padding: 25px;
+.logo {
+  height: 120px;
 }
 
 .nav-list {
   padding-top: 50px;
 }
 
-.image {
-  height: 400px;
+.solutions {
+  border: none;
+  padding: 0px;
+}
+
+.company {
+  border: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.blog {
+  border: none;
+  padding: 0px;
+}
+
+.email-us {
+  background-color: black;
+  color: white;
+  margin-top: -40px;
+  margin-left: 10px;
+  padding: 9px 25px;
+}
+
+.dropdown .email-us:hover {
+  background-color: black;
+  color: grey;
+  margin-top: -40px;
+  margin-left: 10px;
+  padding: 9px 25px;
+}
+
+.phone-number {
+  position: absolute;
+  left: 15px;
+  top: -45px;
+  color: black;
+}
+
+.btn-default:hover {
+  color: black;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.launch-quotes {
+  font-size: 44px;
+  color: white;
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+  margin-bottom: 30px;
+}
+
+.launch-quotes-learn {
+  border-color: white;
+  border-style: double;
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #a3a3a3;
+}
+
+.custom-drop {
+
+  position: absolute;
+  margin-top: 50px;
+  border-top-color: red;
+  border-style: solid;
+  border-top-width: 3px;
+  border-radius: 0px;
+}
+
+.nav-list li {
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+  border-collapse: all;
+  font-size: 14px;
+  font-weight: 800;
+  content: "3";
+}
+
+.image1 {
+  height: 410px;
   width: 100%;
-  background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home-bg.jpg");
+  background-image: url(https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home-bg.jpg);
   background-size: cover;
+}
+
+.image-text {
+  color: white;
+  text-align: center;
+  font-size: 44px;
+  padding-bottom: 20px;
 }
 
 .quotes {
-
   width: 100%;
-
   color: white;
   background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home_quote_bg.jpg");
-
+  clear: both;
   background-size: cover;
+  margin: 0px;
+}
+
+.quotes h1 {
+  font-size: 32px;
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: bold;
+}
+
+.learn-more {
+  border-radius: 0px;
+  background-color: transparent;
 }
 
 .image-content-seperation {
-  padding: 20px;
+  margin-top: 35px;
 }
 
 .protected {
   text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 90px;
 }
->>>>>>> 4e3f6f4e786a9f97099562a876dc449edef178ef
+
+.we-help {
+  font-weight: 700;
+}
+
+.button-custom {
+  border-radius: 0px;
+  border-width: medium;
+  border-color: black;
+  font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 15px;
+}
+
+.image2 {
+  height: 275px;
+  width: 100%;
+  background-image: url("https://www.3sixtyintegrated.com/wp-content/uploads/2018/02/home_cta_bg_2.jpg");
+  background-size: cover;
+  margin: 0px;
+}
+
+.protect-people-assets {
+
+  background-color: #fafafa;
+  padding: 0px 94px;
+}
+
+.protect-people {
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+.protection-types {
+  font-size: 15px;
+  padding-left: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.learn-more-help {
+  color: white;
+  border-color: #fff;
+}
+
+.learn-more-help:hover {
+  color: black;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.list-elements {
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+  line-height: 26px;
+  font-size: 15px;
+}
+
+.choose-sixty {
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+
+.choose-sixty-about {
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 17px;
+  padding-bottom: 18px;
+}
+
+.who-we-protect {
+  clear: both;
+  background-color: white;
+}
+
+.sponsor-images {
+  margin-right: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+.centered {
+  padding: 32px 0px;
+}
+
+.subscribe {
+  background-color: #fafafa;
+}
+
+.main-subscribe-form {
+
+  background-color: #eee5dc;
+  margin-left: 35px;
+}
+
+.subscribe-form {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  padding: 0px 85px;
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif !important;
+  font-size: 26px !important;
+}
+
+.form-inputs {
+  margin: 0px;
+  font-size: 13px;
+  color: #00000080;
+}
+
+.form-inputs span {
+  color: red;
+  font-size: 145%;
+}
+
+.subscribe-button {
+  width: 100%;
+  background-color: #4e4347;
+  height: 54px;
+  font-size: 30px;
+  color: white;
+}
+
+.footer-back {
+  background-color: #4e4347;
+  color: white;
+  padding:
+}
+
+.footer-name,
+.footer-number {
+  line-height: 1.7em;
+  padding-top: 15px;
+}
+
+.footer-email,
+.footer-address {
+  line-height: 1.7em;
+}
+
+.footer-copyright,
+.footer-location {
+  line-height: 1.7em;
+  padding-bottom: 25px;
+}
