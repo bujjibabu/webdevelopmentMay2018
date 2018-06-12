@@ -287,3 +287,22 @@ p {
   line-height: 1.7em;
   padding-bottom: 25px;
 }
+
+
+
+
+
+/*Maps*/
+
+.mapouter {
+  text-align: right;
+  height: 400px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 400px;
+  width: 100%;
+}
