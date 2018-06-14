@@ -23,6 +23,16 @@
     margin-right: 10% !important;
 
 }
+.dropdown-elements{
+	margin-bottom: 4%;
+}
+.dropdown-box{
+	padding-bottom: 20%;
+}
+.dropdown-border{
+	border-top-color: red !important;
+    border-top-width: 3px !important;
+}
 .nav-btn{
     box-sizing: border-box;
     background: black;
@@ -34,7 +44,10 @@
     color: #d0c2c2;
     background: black !important;
 }
-.page-body1, .page-body7{
+.dropdown-box:hover .dropdown-border{
+	display: block;
+}
+.page-body1, .page-body7{s
 	display: block !important;
 	position: relative;
 	background-position: top center;
@@ -54,7 +67,7 @@
 }
 .page-body1-button, .page-body7 .page-body7-button{
     margin-top: 2%;
-    width: 10% !important;
+    width: 11% !important;
     height: 10%;
     color: #ffffff!important;
     border: 1px solid;

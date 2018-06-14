@@ -1,0 +1,11 @@
+.page-body{
+	background-image: url(images/page_bg.jpg);
+}
+.page-body .data-form{
+	margin-top: 5%;
+	margin-right: 2%;
+
+}
+.page-body .data-table{
+	margin-top: 5%;
+}
