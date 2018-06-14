@@ -21,12 +21,19 @@
   padding: 0px;
 }
 
+.solutions:hover+ul {
+  display: block;
+}
+
 .company {
   border: none;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
+.company:hover+ul {
+  display: block;
+}
 .blog {
   border: none;
   padding: 0px;
@@ -287,6 +294,7 @@ p {
   line-height: 1.7em;
   padding-bottom: 25px;
 }
+
 
 
 
