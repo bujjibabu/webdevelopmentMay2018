@@ -97,5 +97,7 @@ function userInputDetails() {
   cell7.setAttribute("class", "glyphicon glyphicon-trash");
   cell7.setAttribute("onClick", "del(this.id);")
   cell7.setAttribute("id", rowId);
+
+
   row.setAttribute("id", rowId);
 }
