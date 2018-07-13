@@ -4,17 +4,20 @@
 <head>
   <title>Bootstrap Bascics</title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 
 <body class="container">
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#xyz">
+  <button type="button" class="btn btn-primary" onclick="showModal()">
     Modal
   </button>
 
   <!-- Modal -->
-  <div class="modal" id="xyz"  role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -32,9 +35,82 @@
     </div>
   </div>
 
+  <div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active" onclick="showTab('home', event)"><a>Home</a></li>
+    <li role="presentation" onclick="showTab('profile', event)"><a>Profile</a></li>
+    <li role="presentation" onclick="showTab('messages', event)"><a >Messages</a></li>
+    <li role="presentation" onclick="showTab('settings', event)"><a >Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <h1>Home</h1>
+    “Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved. “Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.
+  </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+      <h1>profile</h1>
+    “Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved. “Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+      <h1>messages</h1>
+    “Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved. “Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.
+    </div>
+    <div role="tabpanel" class="tab-pane" id="settings">
+      <h1>settings</h1>
+    “Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved. “Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" rel='tooltip' data-placement="top"
+ title="this is tool tip content">Tooltip on left</button>
+
+
+ <button type="button" class="btn btn-lg btn-danger" id="pop" data-toggle="popover" title="Popover title" data-content="<h1>Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved. “Apart from the added value of partnering with a single integrator, the products & services provided by 3Sixty speak for themselves, ensuring a positive experience for all parties involved.“Apart from the added value of partnering with a single integra</h1><h3>gggg</h3>">Click to toggle popover</button>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+
+    $('#pop').popover({html:true});
+
+    var showModal = function() {
+      $('#myModal').modal({
+        backdrop: false,
+        keyboard: true,
+        show: true
+      });
+    };
+
+    var hoideAll = function() {
+      $('#home').hide();
+      $('#profile').hide();
+      $('#messages').hide();
+      $('#settings').hide();
+    }
+  
+    hoideAll();
+    $('#home').show();
+
+    var showTab = function(tab, e) {
+        $('.nav-tabs li').removeClass('active');
+        e.currentTarget.className = 'active';
+        hoideAll();
+       $('#'+ tab).show();
+    }
+
+
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+
+  </script>
 </body>
 
 </html>

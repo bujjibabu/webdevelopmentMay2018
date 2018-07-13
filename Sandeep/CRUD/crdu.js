@@ -1,5 +1,12 @@
 var UserObj = new Array();
 var id = UserObj.length + 1;
+var editDetails =  false;
+var User = {
+    SNo: '',
+    Name: '',
+    Address: '',
+    PhoneNumber: ''
+  };
 
 function view(clicked_id) {
   document.getElementById('modalName').innerHTML = "Name: " + UserObj[clicked_id - 1].Name;
@@ -8,6 +15,7 @@ function view(clicked_id) {
 }
 
 function Update(clicked_id) {
+  editDetails = false;
   var FN = document.getElementById('firstName').value;
   var LN = document.getElementById('lastName').value;
   var Name = FN + " " + LN;
@@ -27,6 +35,7 @@ function Update(clicked_id) {
 }
 
 function edit(clicked_id) {
+  editDetails = true;
   document.getElementById('firstName').value = UserObj[clicked_id - 1].Name.split(" ")[0];
   document.getElementById('lastName').value = UserObj[clicked_id - 1].Name.split(" ")[1];
   document.getElementById('address').value = UserObj[clicked_id - 1].Address;
@@ -34,14 +43,10 @@ function edit(clicked_id) {
   document.getElementById('userButton').innerHTML = "UPDATE";
   document.getElementById('userButton').setAttribute("onClick", "Update(this.id);");
   document.getElementById('userButton').setAttribute("id", clicked_id);
-
 }
 
 function del(clicked_id) {
-
-
   document.getElementById("results").deleteRow(clicked_id - 1);
-
   var index = clicked_id - 1;
   if (index !== -1) {
     UserObj.splice(index, 1);
@@ -58,14 +63,20 @@ function del(clicked_id) {
 function userInputDetails() {
   var FN = document.getElementById('firstName').value;
   var LN = document.getElementById('lastName').value;
+  var address =  document.getElementById('address').value;
+  var PhoneNumber =  document.getElementById('PhoneNumber').value;
   var Name = FN + " " + LN;
-  var User = {
+  user.SNo = UserObj.length;
+  user.Name = Name;
+  user.Address = address;
+  user.PhoneNumber = PhoneNumber;
+ /* User = {
     SNo: UserObj.length,
     Name: Name,
     Address: document.getElementById('address').value,
     PhoneNumber: document.getElementById('phoneNumber').value
-  }
-  UserObj.push(User);
+  }*/
+  UserObj.unshift(User);
 
 
   var table = document.getElementById("results");
