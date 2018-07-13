@@ -1,0 +1,12 @@
+.form-inputs {
+  margin: 0px;
+  font-size: 13px;
+  color: #00000080;
+}
+.subscribe-button {
+  width: 100%;
+  background-color: #404347;
+  height: 54px;
+  font-size: 30px;
+  color: white;
+}
