@@ -1,75 +1,111 @@
 <!DOCTYPE html>
 <html ng-app='crudOpp'>
+
 <head>
-	<title>Form</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+
 <body class="container" ng-controller="useController">
-<h3 class="text-center">User Form</h3>
-<form class="col-sm-offset-4 col-sm-4">
-	<div class="form-group">
-		<label>Name:</label>
-		<input type="text" ng-model="userObj.userName" class="form-control">
-	</div>
-	<div class="form-group">
-		<label>Email:</label>
-		<input type="text" ng-model="userObj.email" class="form-control">
-	</div>
-	<div class="form-group">
-		<label>Phone:</label>
-		<input type="text" ng-model="userObj.phone" class="form-control">
-	</div>
-	<div class="form-group">
-		<label>DOB:</label>
-		<input type="text" ng-model="userObj.dob" class="form-control">
-	</div>
-	<button class="btn btn-primary btn-block" ng-click="submitForm()">Submit</button>
-</form>
+  <h3 class="text-center">User Form</h3>
+  <form class="col-sm-offset-4 col-sm-4">
+    <div class="form-group">
+      <label>Name:</label>
+      <input type="text" ng-model="userObj.userName" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Email:</label>
+      <input type="text" ng-model="userObj.email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Phone:</label>
+      <input type="text" ng-model="userObj.phone" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>DOB:</label>
+      <input type="text" ng-model="userObj.dob" class="form-control">
+    </div>
+    <!-- <button class="btn btn-primary btn-block" ng-click="submitForm()" ng-show="createUserFlag">Submit</button> -->
+    <!-- <button class="btn btn-primary btn-block" ng-click="updateUser()" ng-hide="createUserFlag">UpDate</button> -->
+    <button class="btn btn-primary btn-block" ng-click="submitForm()">{{formButton}}</button>
+  </form>
+  <h3 class="col-sm-12">Users Data</h3>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>DOB</th>
+        <th>Edit</th>
+        <th>View</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in users">
+        <td class="text-center" ng-bind="$index+1"></td>
+        <td class="text-center" ng-bind="user.userName"></td>
+        <td class="text-center" ng-bind="user.email"></td>
+        <td class="text-center" ng-bind="user.phone"></td>
+        <td class="text-center" ng-bind="user.dob"></td>
+        <td class="text-center"><b class="glyphicon glyphicon-edit" ng-click="editUser(user, $index)"></b></td>
+        <td class="text-center"><b class="glyphicon glyphicon-eye-open"></b></td>
+        <td class="text-center"><b class="glyphicon glyphicon-trash text-danger" ng-click="deleteUser($index)"></b></td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript">
+  angular.module('crudOpp', []).controller('useController', function($scope) {
 
-<h3 class="col-sm-12">Users Data</h3>
-<table class="table table-bordered table-striped">
-	<thead>
-		<tr>
-			<th>S.No</th>
-			<th>Name</th>
-			<th>Email</th>
-			<th>Phone</th>
-			<th>DOB</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr ng-repeat="user in users">
-			<td ng-bind="$index+1"></td>
-			<td ng-bind="user.userName"></td>
-			<td ng-bind="user.email"></td>
-			<td ng-bind="user.phone"></td>
-			<td ng-bind="user.dob"></td>
-		</tr>
-	</tbody>
-</table>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script type="text/javascript">
-	angular.module('crudOpp', []).controller('useController', function($scope) {
-		$scope.userObj = {
-			userName: '',
-			email: '',
-			phone: '',
-			dob: ''
-		};
-		$scope.users = [];
+    $scope.submitForm = function() {
+    	if($scope.createUserFlag) {
+	    	$scope.users.unshift($scope.userObj);
+    	} else {
+    		$scope.users[$scope.editUserIndex] = $scope.userObj;
+		  	$scope.createUserFlag = true;
+		  	$scope.formButton = 'Submit';
+    	}
+    	 $scope.userObj = { userName: '', email: '', phone: '', dob: '' };
+    };
 
-		$scope.submitForm = function() {
-			$scope.users.unshift($scope.userObj);
-			console.log('opdated User Array::', $scope.users);
-			$scope.userObj = {
-				userName: '',
-				email: '',
-				phone: '',
-				dob: ''
-			};
-		};
+    //Delete functinality
+    $scope.deleteUser = function(index) {
+    	$scope.users.splice(index, 1);
+    };
 
-	});
-</script>
+    //edit functionality
+    $scope.editUser = function(userDetails, index) {
+    	$scope.editUserIndex = index;
+    	$scope.createUserFlag = false;
+    	$scope.formButton = 'Update';
+    	$scope.userObj = {
+        userName: userDetails.userName,
+        email: userDetails.email,
+        phone: userDetails.phone,
+        dob: userDetails.dob
+      };
+    };
+
+   /* $scope.updateUser = function() {
+			$scope.users[$scope.editUserIndex] = $scope.userObj;
+			$scope.userObj = { userName: '', email: '', phone: '', dob: '' };
+		  $scope.createUserFlag = true;
+    };*/
+
+    $scope.init = function() {
+    	 $scope.createUserFlag = true;
+		   $scope.userObj = { userName: '', email: '', phone: '', dob: '' };
+		   $scope.users = [];
+		   $scope.formButton = 'Submit';
+    };
+
+    $scope.init();
+    
+  });
+  </script>
 </body>
+
 </html>
