@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app='AjaxOpp'>
+
+<head>
+  <title>Ajax</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-controller="useController">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>DOB</th>
+        <th>Edit</th>
+        <th>View</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in users | limitTo:limitValue">
+        <td class="text-center" ng-bind="$index+1"></td>
+        <td class="text-center" ng-bind="user.name"></td>
+        <td class="text-center" ng-bind="user.mobile"></td>
+        <td class="text-center" ng-bind="user.email"></td>
+        <td class="text-center" ng-bind="user.dob"></td>
+        <td class="text-center"><b class="glyphicon glyphicon-edit" ng-click="editUser(user, $index)"></b></td>
+        <td class="text-center"><b class="glyphicon glyphicon-eye-open"></b></td>
+        <td class="text-center"><b class="glyphicon glyphicon-trash text-danger" ng-click="deleteUser($index)"></b></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- <a ng-click="loadMoreRecords()">Load More</a> -->
+  <nav aria-label="Page navigation">
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+      </li>
+      <li ng-repeat="page in totalPages"><a ng-click="pageClick(page.pageno)">{{page.pageno}}</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+      </li>
+    </ul>
+  </nav>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript">
+  angular.module('AjaxOpp', []).controller('useController', function($scope, $http) {
+    //alert('controller calling...');
+    var url = 'data/usersData.json';
+    $http.get(url).then(function(result) {
+      $scope.users = result.data;
+      $scope.totalRec = $scope.users.length;
+      //console.log('no of rec::', $scope.users.length);
+      for (var i = 1; i <= $scope.totalRec/20; i++) {
+        console.log('inside loop')
+        $scope.totalPages.push({ 'pageno': i });
+      } 
+    });
+
+    $scope.loadMoreRecords = function() {
+      $scope.limitValue += 10;
+    };
+
+    $scope.init = function() {
+      $scope.limitValue = 20;
+      $scope.totalPages = [];
+    };
+
+    $scope.init();
+
+  });
+  </script>
+</body>
+
+</html>
